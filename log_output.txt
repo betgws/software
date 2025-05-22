@@ -1,0 +1,9 @@
+https://github.com/betgws/software
+
+[betgws] Tue May 20 00:35:08 2025 +0900 edit: requirement List 수정 409d2e0
+[betgws] Tue May 20 00:26:57 2025 +0900 add: communication 다이어그램 작성 7b71f35
+[betgws] Tue May 20 00:21:55 2025 +0900 edit: usecase Diagram 수정 03ca636
+[betgws] Sat May 17 13:07:31 2025 +0900 feat/ user description 작성 7e2b083
+[betgws] Fri May 16 10:18:38 2025 +0900 edit: requirementList 수정 5905791
+[betgws] Fri May 16 09:47:35 2025 +0900 feat/ requirement List 작성 54ded50
+[betgws] Thu May 15 20:56:07 2025 +0900 first commit 0702df9
