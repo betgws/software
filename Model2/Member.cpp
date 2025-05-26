@@ -4,27 +4,18 @@
 
 
 #include "Member.h"
+#include "AddMember.h"
 #include <string>
+#include <vector>
 
 using namespace std;
 
-/**
- * Member implementation
+/*
+ * 함수 이름 : addRentalList
+ * 기능 : 해당 멤버가 대여한 자전거 리스트 
+ * 전달 인자 : string
+ * 반환값 : 없음
  */
-
-
-/**
- * @param userId
- * @param password
- * @param phoneNumber
- */
-Member::Member(string userId, string password, string phoneNumber) {
-
-}
-
-/**
- * @param bikeId
- */
-void Member::addRentedList(int bikeId) {
-
+void Member::addRentedList(string bikeId) {
+	rentedBikeIds.push_back(bikeId);
 }

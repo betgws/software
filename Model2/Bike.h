@@ -12,19 +12,13 @@ using namespace std;
 class Bike {
 public: 
     
-/**
- * @param bikeId
- * @param bikeType
- */
- Bike(char bikeId, string bikeType);
-    
-/**
- * @param isRented
- */
-void setIsRented(bool isRented);
+    Bike(string bikeId, string bikeType);
+    void setIsRented(bool isRented);
+    string getBikeId() { return bikeId; }
+    string getBikeType() { return bikeType; }
 private: 
-    int bikeId;
-    char bikeType;
+    string bikeId;
+    string bikeType;
     bool isRented;
 };
 

@@ -7,17 +7,21 @@
 #define _LOGINUI_H
 #include <string>
 
+#include "File.h"
+#include "Login.h"
+
+
 using namespace std;
+
+class Login;
+
+
 class LoginUI {
 public: 
     
-/**
- * @param userId
- * @param password
- */
-void input(string userId, string password);
-    
-void startInterface();
+    LoginUI() {}
+    void input(Login* login, File* file);
+    void startInterface();
 };
 
 #endif //_LOGINUI_H

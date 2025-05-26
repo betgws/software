@@ -10,11 +10,16 @@ using namespace std;
 
 class User {
 public: 
-    
-void isUserIdAndPasswordCorrect();
+    User() {};
+    User(string userId, string password) : userId(userId), password(password) {};
+    string getUserId();
+    string getPassword();
+    virtual ~User() {}
 private: 
     string userId;
     string password;
+    
+
 };
 
 #endif //_USER_H

@@ -8,27 +8,24 @@
 
 #include "User.h"
 #include <list>
+#include <vector>
 
 using namespace std;
 
 class Member: public User {
 public: 
  
-    
-/**
- * @param userId
- * @param password
- * @param phoneNumber
- */
-Member(string userId, string password, string phoneNumber);
-    
-/**
- * @param bikeId
- */
-void addRentedList(int bikeId);
+   
+    Member(string userId, string password, string phoneNumber) : User(userId, password), phoneNumber(phoneNumber) {
+        this->phoneNumber = phoneNumber;
+    };
+    void addRentedList(string bikeId);
+    vector<string>& getRentedBikeIds() { return rentedBikeIds; };
+
 private: 
     string phoneNumber;
-    list<int> rentedBikeIds;
+    vector<string> rentedBikeIds;
+ 
 };
 
 #endif //_MEMBER_H

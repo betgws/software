@@ -10,9 +10,11 @@
 #include "Bike.h"
 
 
-class admin: public User {
+class Admin: public User {
 public: 
-    Bike 0..*;
+    Admin(string userId, string password)
+        : User(userId, password) {
+    }
 };
 
 #endif //_ADMIN_H

@@ -7,6 +7,8 @@
 #define _REGISTERUI_H
 
 #include <string>
+#include "File.h"
+#include "AddMember.h"
 using namespace std;
 
 class RegisterUI {
@@ -14,12 +16,8 @@ public:
     
 void startInterface();
     
-/**
- * @param userId
- * @param password
- * @param phoneNumber
- */
-void join(string userId, string password, string phoneNumber);
+
+void join(AddMember* addMember, File* file);
 };
 
 #endif //_REGISTERUI_H

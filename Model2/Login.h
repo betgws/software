@@ -8,16 +8,20 @@
 
 #include <string>
 
+#include "UserTable.h"
 using namespace std;
+
+class LoginUI;
 
 class Login {
 public: 
-    
-/**
- * @param userId
- * @param password
- */
-    Login(string userId, string password);
+    Login(UserTable* userTable);
+    void login(string userId, string password);
+    LoginUI* getLoginUI() { return loginUI; };
+private:
+	LoginUI* loginUI;
+    UserTable* userTable;
+    int loginCount = 0;
 };
 
 #endif //_LOGIN_H
